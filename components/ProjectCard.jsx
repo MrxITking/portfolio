@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import {Button} from "./ui/button"
 import { Github, Eye } from 'lucide-react'
-import {Badge, } from "@/components/ui/badge"
+import {Badge} from "@/components/ui/badge"
 import {Card, CardHeader, CardContent, CardTitle, CardDescription} from '@/components/ui/card'
 
 
@@ -31,14 +31,14 @@ export default function ProjectCard({ project }) {
                 <p>{description} </p>
             </div>
             <div className='flex items-center justify-between mt-2'>
-                <Link href={link} className=' '>
-                    <Button className='space-x-3 dark:text-white hover:bg-orange-400 rounded-3xl bg-red-500'>
+                <Link href={link}>
+                    <Button className='space-x-2 dark:text-white hover:bg-orange-400 rounded-3xl bg-red-500'>
                         <p className='text-lg'>Visit</p>
                         <Eye/>
                     </Button>
                 </Link>
                 <Link href={link}>
-                    <Button className='space-x-3 hover:bg-orange-400 
+                    <Button className='space-x-2 hover:bg-orange-400 
                         rounded-3xl bg-slate-700 dark:bg-slate-900 dark:text-white '>
                         <p className='text-lg'>View</p>
                         <Github/>

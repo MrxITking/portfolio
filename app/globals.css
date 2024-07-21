@@ -79,11 +79,18 @@
     @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-3 rounded-sm flex items-center gap-x-4;
   }
   .h3 {
-    @apply text-3xl font-semibold
+    @apply text-3xl font-bold capitalize
   }
 
   .h2 {
-    @apply text-4xl font-bold
+    @apply text-2xl font-semibold capitalize
+  }
+  .mobile {
+    @apply max-w-[300px] text-justify md:max-w-[850px] px-2
+  }
+
+  .center {
+    @apply flex items-center justify-center flex-col 
   }
 
   /* customize themes */
